@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <style>
+  p {
+    background: #dad;
+    font-weight: bold;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+ 
+<button>Hide 'em</button>
+<button id="tombol">show</button>
+<p>Hiya</p>
+<p>
+<img src="/praktikum html klp/images/lab tkr2.jpg">
+</p>
+<script>
+$( "button" ).on( "click", function() {
+  $( "p" ).hide( "fast" );
+}); 
+</script>
+
+<script>
+$( "#tombol" ).on( "click", function() {
+  $( "p" ).show( "slow" );
+}); 
+</script>
+
+</body>
+</html>
